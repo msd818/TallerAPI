@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#443F39">
+
+
+    <TextView
+        android:id="@+id/TxtName"
+        android:layout_width="250dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/corner"
+        android:ems="10"
+        android:fontFamily="sans-serif-thin"
+        android:hint=""
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="NOMBRE:"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/TxtName"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TxtCountry"
+        android:layout_width="171dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/corner"
+        android:ems="10"
+        android:fontFamily="sans-serif-thin"
+        android:hint=""
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TxtName" />
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="PAIS DE ORIGEN:"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/TxtCountry"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/TxtWhiskybase_rating"
+        android:layout_width="200dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/corner"
+        android:ems="10"
+        android:fontFamily="sans-serif-thin"
+        android:hint=""
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TxtCountry" />
+
+    <TextView
+        android:id="@+id/whiskybase_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="CLASIFICACION:"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/TxtWhiskybase_rating"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/country" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
